@@ -1,0 +1,13 @@
+// Random Game
+function randomGame(){
+    let num;
+    let tries = 0;
+    let count = setInterval(function(){
+      num = Math.random();
+      tries++
+      if(num > .75) {
+        clearInterval(count);
+        console.log("About " + tries + " tries.");
+      }
+    },1000)
+  }
