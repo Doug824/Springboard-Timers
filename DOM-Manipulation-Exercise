@@ -1,0 +1,31 @@
+//1.
+document.getElementById('container');
+//2.
+document.querySelector('#container');
+//3.
+document.querySelectorAll('.second');
+//4.
+document.querySelector('ol .third');
+//5.
+let newText = document.querySelector('#container');
+newText.innerText = "Hello";
+//6.
+let footer = document.querySelector('.footer');
+footer.classList.add('main');
+//7.
+footer.classList.remove('main');
+//8.
+let newLi = document.createElement('li');
+//9.
+newLi.innerText = "four"
+//10.
+let list = document.querySelector('ul');
+list.append(newLi)
+//11.
+let loop = document.querySelectorAll('ol li');
+
+for(let i = 0; i < loop.length; i++) {
+    loop[i].style.backgroundColor = 'green';
+}
+//12.
+footer.remove();
